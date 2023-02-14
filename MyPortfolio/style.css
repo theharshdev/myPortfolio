@@ -1,0 +1,262 @@
+* {
+        font-family: 'Heebo', sans-serif;
+}
+body {
+        background-color: black;
+}
+html{
+        scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+        width: 5px;
+}
+::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent,#ffffff);
+        border-radius: 10px;
+}
+/*======================================= CSS for Nav Items================================*/
+
+.logo {
+        font-size: 45px;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+}
+.logo:hover {
+        text-decoration: none;
+        color: white;
+}
+.resume-btn {
+        color: black;
+        background-color: white;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 20px;
+        text-decoration: none;
+}
+.resume-btn:hover {
+        border: 2px solid white;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+}
+.fa-brands {
+        color: white;
+        font-size: 30px;
+}
+.fa-ellipsis-vertical {
+        color: white;
+        font-size: 30px;
+}
+.mynav {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 6px 20px;
+        text-decoration: none;
+        transition: 0.5s;
+}
+.mynav:hover {
+        text-decoration: none;
+        color: #1e516d;
+}
+.bg-color {
+        background-color:black;
+}
+@media screen and (max-width: 992px) {
+        .bg-color {
+                background-color: black;
+        }
+        .logo {
+                font-size: 35px;
+                font-weight: 500;
+        }
+        .resume-btn {
+                visibility: hidden;
+        }
+        .active1 {
+                border-bottom: none;
+        }
+}
+.fa-linkedin:hover, .fa-github:hover {
+        color: lightgray;
+}
+
+.main-bg{
+        border: 4px solid white;
+        background-color:#1e516d;
+        transition: 0.7s;
+        border-radius: 0px 40px 0px 40px;
+}
+.main-bg:hover{
+        border-radius: 40px 0px 40px 0px;
+}
+/*========================================CSS for Buttons===============================*/
+
+.hero-btn {
+        border-radius: 50px;
+        background-color: #1e516d;
+        color: white;
+        font-size: 17px;
+        font-weight: 550;
+        padding: 6px 20px;
+        margin: 7px;
+        text-decoration: none;
+        transition: 0.5s;
+}
+.hero-btn:hover {
+        background-color: whitesmoke;
+        color: #1e516d;
+}
+.zero-btn {
+        border-radius: 50px;
+        background-color: whitesmoke;
+        color: #1e516d;
+        font-size: 17px;
+        font-weight: 550;
+        padding: 6px 20px;
+        margin: 7px;
+        text-decoration: none;
+        transition: 0.5s;
+}
+.zero-btn:hover {
+        background-color: #1e516d;
+        color: white;
+}
+/*==============================CSS for Headings and Paragraph==============================*/
+
+.main-heading {
+        font-size: 73px;
+        font-weight: 400;
+        color: white;
+}
+.heading {
+        font-size: 45px;
+        font-weight: 500;
+        color: white;
+}
+.heading1 {
+        font-size: 29px;
+        font-weight: 500;
+        color: white;
+}
+.heading2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+}
+.paragraph {
+        font-size: 15px;
+        font-weight: 400;
+        color: white;
+}
+.paragraph1 {
+        font-size: 9px;
+        font-weight: 400;
+        color: white;
+}
+@media screen and (max-width: 1090px) {
+        .main-heading {
+                font-size: 30px;
+        }
+        .heading {
+                font-size: 20px;
+        }
+        .heading1 {
+                font-size: 18px;
+        }
+        .heading2 {
+                font-size: 15px;
+        }
+        .paragraph {
+                font-size: 10px;
+        }
+}
+/*==============================================CSS for Progress Bar=========================================*/
+
+.progress-title {
+        font-size: 13px;
+        font-weight: 450;
+        color: white;
+        margin: 0 0 25px;
+}
+.progress {
+        height: 5px;
+        background: black;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        overflow: visible;
+        position: relative;
+}
+.progress .progress-bar {
+        box-shadow: none;
+        border: none;
+        border-radius: 15px;
+        position: relative;
+        -webkit-animation: animate-positive 1s;
+        animation: animate-positive 2s;
+}
+.progress .progress-value {
+        width: 70px;
+        height: 35px;
+        line-height: 27px;
+        border-radius: 20px;
+        background: black;
+        font-size: 17px;
+        font-weight: 600;
+        position: absolute;
+        top: -12px;
+        right: 0;
+        z-index: 2;
+}
+.progress:before {
+        border: 5px solid #1e516d;
+}
+.progress .progress-value {
+        border: 4px solid white;
+        color: white;
+        font-size: 13px;
+}
+@keyframes animate-positive {
+        0% {
+                width: 0;
+        }
+}
+/*========================================CSS for Services ==========================================*/
+
+.service-border {
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 15px 0px;
+        transition: 0.5s;
+}
+.service-border:hover {
+        background-color: white;
+        border: none;
+        color: black;
+}
+/*=================================Contact CSS ===================================================*/
+
+.form-bg {
+        background-color: white;
+        border: none;
+        border-radius: 14px;
+}
+.fa-location-dot, .fa-phone-volume, .fa-envelope {
+        font-size: 40px;
+        color: white;
+}
+.icontact {
+        font-size: 20px;
+        color: white;
+}
+@media screen and (max-width: 1090px) {
+        .fa-location-dot, .fa-phone-volume, .fa-envelope {
+                font-size: 30px;
+        }
+        .icontact {
+                font-size: 16px;
+        }
+}
